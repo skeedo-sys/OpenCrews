@@ -4,9 +4,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![Stars](https://img.shields.io/github/stars/mergisi/awesome-openclaw-agents?style=social)](https://github.com/mergisi/awesome-openclaw-agents)
-[![Agents](https://img.shields.io/badge/agents-53-blueviolet)](agents/)
+[![Agents](https://img.shields.io/badge/agents-65-blueviolet)](agents/)
 
-> A curated collection of **53 production-ready AI agent templates** for the OpenClaw ecosystem. Every template is a copy-paste ready `SOUL.md` file.
+> A curated collection of **65 production-ready AI agent templates** for the OpenClaw ecosystem. Every template is a copy-paste ready `SOUL.md` file.
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:7C3AED&height=180&section=header&text=%F0%9F%A6%9E%20Awesome%20OpenClaw%20Agents&fontSize=36&fontColor=ffffff&fontAlignY=35" width="100%"/>
@@ -50,7 +50,7 @@ What's inside: PM, Writer, SEO, Analyst, DevOps, Outreach agents + Docker + Tele
 
 ## Contents
 
-- [Agent Templates](#agent-templates) (53 agents across 13 categories)
+- [Agent Templates](#agent-templates) (65 agents across 13 categories)
   - [Productivity](#productivity) · [Development](#development) · [Marketing & Content](#marketing--content) · [Business](#business) · [Personal](#personal)
   - [DevOps](#devops) · [Finance](#finance) · [Education](#education) · [Healthcare](#healthcare) · [Legal](#legal) · [HR](#hr) · [Creative](#creative) · [Security](#security)
 - [Use Cases](#use-cases) (132 real-world examples)
@@ -76,7 +76,7 @@ npm install && cp ../agents/productivity/orion/SOUL.md ./SOUL.md
 node bot.js
 ```
 
-> All 53 agents are also available as machine-readable JSON: [`agents.json`](agents.json)
+> All 65 agents are also available as machine-readable JSON: [`agents.json`](agents.json)
 
 ### Productivity
 
@@ -97,6 +97,7 @@ node bot.js
 | [🐛 Trace](agents/development/bug-hunter/) | Error analysis, root cause investigation, debugging | [View](agents/development/bug-hunter/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 | [🧪 Probe](agents/development/api-tester/) | API endpoint testing, health checks, performance | [View](agents/development/api-tester/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 | [📋 Log](agents/development/changelog/) | Auto-changelog from git commits, release notes | [View](agents/development/changelog/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
+| [🔗 Dependency Scanner](agents/development/dependency-scanner/) | CVE scanning, license checks, supply chain security, auto-upgrade PRs | [View](agents/development/dependency-scanner/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 
 ### Marketing & Content
 
@@ -107,6 +108,9 @@ node bot.js
 | [🔍 Rank](agents/marketing/seo-writer/) | SEO content writer with keyword research from GSC | [View](agents/marketing/seo-writer/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent/seo-specialist-soul-md) |
 | [📬 Digest](agents/marketing/newsletter/) | Weekly newsletter curator and email writer | [View](agents/marketing/newsletter/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 | [🔭 Scout](agents/marketing/competitor-watch/) | Competitor monitoring, pricing intel, market analysis | [View](agents/marketing/competitor-watch/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
+| [🔎 Reddit Scout](agents/marketing/reddit-scout/) | Subreddit monitoring, sentiment analysis, reply opportunities, daily digest | [View](agents/marketing/reddit-scout/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
+| [🎵 TikTok Repurposer](agents/marketing/tiktok-repurposer/) | Convert blogs and podcasts into TikTok, Reels, and Shorts scripts | [View](agents/marketing/tiktok-repurposer/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
+| [📨 Cold Outreach](agents/marketing/cold-outreach/) | Lead research, personalized cold emails, outreach sequences | [View](agents/marketing/cold-outreach/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 
 ### Business
 
@@ -117,6 +121,8 @@ node bot.js
 | [💼 Pipeline](agents/business/sales-assistant/) | Lead scoring, outreach drafting, pipeline reports | [View](agents/business/sales-assistant/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent/sales-representative-soul-md) |
 | [💰 Ledger](agents/business/invoice-tracker/) | Payment monitoring, invoice tracking, MRR reports | [View](agents/business/invoice-tracker/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 | [🔮 Sentinel](agents/business/churn-predictor/) | Churn risk scoring, retention actions, re-engagement | [View](agents/business/churn-predictor/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
+| [🤝 Personal CRM](agents/business/personal-crm/) | Contact tracking, follow-up reminders, relationship health reports | [View](agents/business/personal-crm/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
+| [💬 WhatsApp Business Bot](agents/business/whatsapp-business/) | Multi-channel support (WhatsApp, Instagram, email), lead qualification | [View](agents/business/whatsapp-business/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 
 ### Personal
 
@@ -125,6 +131,8 @@ node bot.js
 | [📅 Atlas](agents/personal/daily-planner/) | Daily schedule optimizer, morning plans, evening reviews | [View](agents/personal/daily-planner/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 | [📚 Scroll](agents/personal/reading-digest/) | Article summarizer, weekly reading digest, Notion sync | [View](agents/personal/reading-digest/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 | [💪 Iron](agents/personal/fitness-coach/) | Workout planner, nutrition tracker, progress reports | [View](agents/personal/fitness-coach/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent/fitness-coach-soul-md) |
+| [🏠 Home Automation](agents/personal/home-automation/) | Smart home control via Telegram, Home Assistant, IoT devices | [View](agents/personal/home-automation/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
+| [👨‍👩‍👧‍👦 Family Coordinator](agents/personal/family-coordinator/) | Shared calendar, meal planning, chore rotation, grocery lists | [View](agents/personal/family-coordinator/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 
 ### DevOps
 
@@ -135,6 +143,8 @@ node bot.js
 | [🖥️ Infra Monitor](agents/devops/infra-monitor/) | Tracks server health, disk, CPU, memory usage | [View](agents/devops/infra-monitor/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 | [📜 Log Analyzer](agents/devops/log-analyzer/) | Parses logs, finds patterns, alerts on anomalies | [View](agents/devops/log-analyzer/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 | [💸 Cost Optimizer](agents/devops/cost-optimizer/) | Monitors cloud spend, suggests savings | [View](agents/devops/cost-optimizer/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
+| [🔧 Self-Healing Server](agents/devops/self-healing-server/) | Auto-restart crashed containers, disk cleanup, 3am incident recovery | [View](agents/devops/self-healing-server/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
+| [🍓 Raspberry Pi Agent](agents/devops/raspberry-pi/) | Lightweight edge agent optimized for Pi, low-RAM, token-efficient | [View](agents/devops/raspberry-pi/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 
 ### Finance
 
@@ -144,6 +154,7 @@ node bot.js
 | [🧮 Invoice Manager](agents/finance/invoice-manager/) | Creates, tracks, and follows up on invoices | [View](agents/finance/invoice-manager/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 | [📈 Revenue Analyst](agents/finance/revenue-analyst/) | Analyzes revenue streams, MRR, churn, forecasts | [View](agents/finance/revenue-analyst/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 | [🏦 Tax Preparer](agents/finance/tax-preparer/) | Organizes receipts, calculates deductions, prepares summaries | [View](agents/finance/tax-preparer/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
+| [📉 Trading Bot](agents/finance/trading-bot/) | Portfolio tracking, market sentiment, price alerts, daily P&L reports | [View](agents/finance/trading-bot/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 
 ### Education
 
@@ -195,6 +206,7 @@ node bot.js
 | [🔐 Access Auditor](agents/security/access-auditor/) | Reviews permissions, flags excessive access | [View](agents/security/access-auditor/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 | [👁️ Threat Monitor](agents/security/threat-monitor/) | Monitors threat feeds, alerts on relevant threats | [View](agents/security/threat-monitor/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 | [📓 Incident Logger](agents/security/incident-logger/) | Documents security incidents, tracks resolution | [View](agents/security/incident-logger/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
+| [🔒 Security Hardener](agents/security/security-hardener/) | Audit SOUL.md, scan skills for malware, harden gateway config | [View](agents/security/security-hardener/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent) |
 
 ---
 
@@ -242,7 +254,7 @@ How OpenClaw compares to other AI agent frameworks:
 | Self-hosted / local | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Heartbeat monitoring | ✅ | ❌ | ❌ | ❌ | ❌ |
 | Works with Ollama (free) | ✅ | ✅ | ✅ | ✅ | ❌ |
-| Production-ready templates | 53 | 0 | 5 | 0 | 3 |
+| Production-ready templates | 65 | 0 | 5 | 0 | 3 |
 | One-command deploy | ✅ | ❌ | ❌ | ❌ | ❌ |
 | Agent-to-agent communication | ✅ | ❌ | ✅ | ✅ | ✅ |
 | Setup time | ~5 min | ~30 min | ~20 min | ~45 min | ~30 min |
@@ -326,7 +338,7 @@ Utilities and helpers for working with OpenClaw.
 | Tool | Description |
 |------|-------------|
 | [openclaw CLI](https://crewclaw.com/blog/openclaw-cli-commands-reference) | Official CLI - complete command reference |
-| [agents.json](agents.json) | Machine-readable index of all 53 agent templates |
+| [agents.json](agents.json) | Machine-readable index of all 65 agent templates |
 | agent-validator | Validate SOUL.md syntax |
 | mcp-tester | Test MCP server connections |
 

@@ -475,5 +475,113 @@
     "description": "Documents security incidents, tracks resolution",
     "soul_md": "agents/security/incident-logger/SOUL.md",
     "deploy_url": "https://crewclaw.com/create-agent"
+  },
+  {
+    "id": "reddit-scout",
+    "name": "Reddit Scout",
+    "emoji": "🔎",
+    "category": "marketing",
+    "description": "Subreddit monitoring, sentiment analysis, reply opportunities, daily digest",
+    "soul_md": "agents/marketing/reddit-scout/SOUL.md",
+    "deploy_url": "https://crewclaw.com/create-agent"
+  },
+  {
+    "id": "home-automation",
+    "name": "Home Automation",
+    "emoji": "🏠",
+    "category": "personal",
+    "description": "Smart home control via Telegram, Home Assistant integration, IoT devices",
+    "soul_md": "agents/personal/home-automation/SOUL.md",
+    "deploy_url": "https://crewclaw.com/create-agent"
+  },
+  {
+    "id": "tiktok-repurposer",
+    "name": "TikTok Repurposer",
+    "emoji": "🎵",
+    "category": "marketing",
+    "description": "Convert blogs and podcasts into TikTok, Reels, and Shorts scripts",
+    "soul_md": "agents/marketing/tiktok-repurposer/SOUL.md",
+    "deploy_url": "https://crewclaw.com/create-agent"
+  },
+  {
+    "id": "trading-bot",
+    "name": "Trading Bot",
+    "emoji": "📉",
+    "category": "finance",
+    "description": "Portfolio tracking, market sentiment, price alerts, daily P&L reports",
+    "soul_md": "agents/finance/trading-bot/SOUL.md",
+    "deploy_url": "https://crewclaw.com/create-agent"
+  },
+  {
+    "id": "security-hardener",
+    "name": "Security Hardener",
+    "emoji": "🔒",
+    "category": "security",
+    "description": "Audit SOUL.md, scan skills for malware, harden gateway configuration",
+    "soul_md": "agents/security/security-hardener/SOUL.md",
+    "deploy_url": "https://crewclaw.com/create-agent"
+  },
+  {
+    "id": "personal-crm",
+    "name": "Personal CRM",
+    "emoji": "🤝",
+    "category": "business",
+    "description": "Contact tracking, follow-up reminders, relationship health reports",
+    "soul_md": "agents/business/personal-crm/SOUL.md",
+    "deploy_url": "https://crewclaw.com/create-agent"
+  },
+  {
+    "id": "family-coordinator",
+    "name": "Family Coordinator",
+    "emoji": "👨‍👩‍👧‍👦",
+    "category": "personal",
+    "description": "Shared calendar, meal planning, chore rotation, grocery lists",
+    "soul_md": "agents/personal/family-coordinator/SOUL.md",
+    "deploy_url": "https://crewclaw.com/create-agent"
+  },
+  {
+    "id": "cold-outreach",
+    "name": "Cold Outreach",
+    "emoji": "📨",
+    "category": "marketing",
+    "description": "Lead research, personalized cold emails, outreach sequences, response tracking",
+    "soul_md": "agents/marketing/cold-outreach/SOUL.md",
+    "deploy_url": "https://crewclaw.com/create-agent"
+  },
+  {
+    "id": "self-healing-server",
+    "name": "Self-Healing Server",
+    "emoji": "🔧",
+    "category": "devops",
+    "description": "Auto-restart crashed containers, disk cleanup, 3am incident recovery",
+    "soul_md": "agents/devops/self-healing-server/SOUL.md",
+    "deploy_url": "https://crewclaw.com/create-agent"
+  },
+  {
+    "id": "raspberry-pi",
+    "name": "Raspberry Pi Agent",
+    "emoji": "🍓",
+    "category": "devops",
+    "description": "Lightweight edge agent optimized for Raspberry Pi, low-RAM, token-efficient",
+    "soul_md": "agents/devops/raspberry-pi/SOUL.md",
+    "deploy_url": "https://crewclaw.com/create-agent"
+  },
+  {
+    "id": "dependency-scanner",
+    "name": "Dependency Scanner",
+    "emoji": "🔗",
+    "category": "development",
+    "description": "CVE scanning, license checks, supply chain security, auto-upgrade PRs",
+    "soul_md": "agents/development/dependency-scanner/SOUL.md",
+    "deploy_url": "https://crewclaw.com/create-agent"
+  },
+  {
+    "id": "whatsapp-business",
+    "name": "WhatsApp Business Bot",
+    "emoji": "💬",
+    "category": "business",
+    "description": "Multi-channel support (WhatsApp, Instagram, email), lead qualification, appointment booking",
+    "soul_md": "agents/business/whatsapp-business/SOUL.md",
+    "deploy_url": "https://crewclaw.com/create-agent"
   }
 ]
