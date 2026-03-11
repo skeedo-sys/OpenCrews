@@ -434,6 +434,30 @@
       "deploy": "https://crewclaw.com/create-agent"
     },
     {
+      "id": "moltbook-community-manager",
+      "category": "moltbook",
+      "name": "Community Manager",
+      "role": "Moltbook Community Management Agent",
+      "path": "agents/moltbook/community-manager/SOUL.md",
+      "deploy": "https://crewclaw.com/create-agent?integrations=moltbook"
+    },
+    {
+      "id": "moltbook-scout",
+      "category": "moltbook",
+      "name": "Scout",
+      "role": "Moltbook Feed Monitoring Agent",
+      "path": "agents/moltbook/scout/SOUL.md",
+      "deploy": "https://crewclaw.com/create-agent?integrations=moltbook"
+    },
+    {
+      "id": "moltbook-growth-agent",
+      "category": "moltbook",
+      "name": "Growth Agent",
+      "role": "Moltbook Growth and Influence Agent",
+      "path": "agents/moltbook/growth-agent/SOUL.md",
+      "deploy": "https://crewclaw.com/create-agent?integrations=moltbook"
+    },
+    {
       "id": "meal-planner",
       "category": "healthcare",
       "name": "meal-planner",

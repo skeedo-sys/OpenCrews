@@ -4,12 +4,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![Stars](https://img.shields.io/github/stars/mergisi/awesome-openclaw-agents?style=social)](https://github.com/mergisi/awesome-openclaw-agents)
-[![Agents](https://img.shields.io/badge/agents-100-blueviolet)](agents/)
+[![Agents](https://img.shields.io/badge/agents-103-blueviolet)](agents/)
 
-> A curated collection of **100 production-ready AI agent templates** for the OpenClaw ecosystem. Every template is a copy-paste ready `SOUL.md` file.
+> A curated collection of **103 production-ready AI agent templates** for the OpenClaw ecosystem. Every template is a copy-paste ready `SOUL.md` file.
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:7C3AED&height=180&section=header&text=%F0%9F%A6%9E%20100%20OpenClaw%20Agent%20Templates&fontSize=36&fontColor=ffffff&fontAlignY=35" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:7C3AED&height=180&section=header&text=%F0%9F%A6%9E%20103%20OpenClaw%20Agent%20Templates&fontSize=36&fontColor=ffffff&fontAlignY=35" width="100%"/>
 </p>
 
 <div align="center">
@@ -26,10 +26,10 @@ Pick a role. Customize the config. Get a full deploy package. No terminal requir
 
 ## Contents
 
-- [Agent Templates](#agent-templates) (100 agents across 18 categories)
+- [Agent Templates](#agent-templates) (103 agents across 19 categories)
   - [Productivity](#productivity) · [Development](#development) · [Marketing](#marketing--content) · [Business](#business) · [Personal](#personal)
   - [DevOps](#devops) · [Finance](#finance) · [Education](#education) · [Healthcare](#healthcare) · [Legal](#legal) · [HR](#hr) · [Creative](#creative) · [Security](#security)
-  - [E-Commerce](#e-commerce) · [Data](#data) · [SaaS](#saas) · [Real Estate](#real-estate) · [Freelance](#freelance)
+  - [E-Commerce](#e-commerce) · [Data](#data) · [SaaS](#saas) · [Real Estate](#real-estate) · [Freelance](#freelance) · [Moltbook](#-moltbook-new)
 - [Use Cases](#use-cases) (132 real-world examples)
 - [Quickstart](#quickstart)
 - [Why OpenClaw?](#why-openclaw) (Comparison)
@@ -293,6 +293,18 @@ Work smarter, bill more.
 | [🤝 Client Manager](agents/freelance/client-manager/) | Client CRM, contract tracking | When you're juggling multiple clients and deadlines | [View](agents/freelance/client-manager/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent?role=project-manager) |
 
 > **Freelancer?** [Deploy a Personal Assistant agent →](https://crewclaw.com/create-agent?role=personal-assistant)
+
+### 🤖 Moltbook `NEW`
+
+AI agent social networking — your agent's presence on the agent-to-agent social layer.
+
+| Agent | Specialty | When to Use | SOUL.md | Deploy |
+|-------|-----------|-------------|---------|--------|
+| [🤖 Community Manager](agents/moltbook/community-manager/) | Post updates, engage, build karma | When you want your agent to maintain a social presence on Moltbook | [View](agents/moltbook/community-manager/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent?integrations=moltbook) |
+| [🔭 Scout](agents/moltbook/scout/) | Feed scanning, keyword monitoring, digests | When you want to monitor Moltbook for relevant discussions and opportunities | [View](agents/moltbook/scout/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent?integrations=moltbook) |
+| [📈 Growth Agent](agents/moltbook/growth-agent/) | Follower growth, submolt management, strategy | When you want to grow your agent's influence and follower base on Moltbook | [View](agents/moltbook/growth-agent/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent?integrations=moltbook) |
+
+> **NEW: Moltbook integration!** Your agent can now post, engage, and grow on the AI agent social network. [Deploy with Moltbook →](https://crewclaw.com/create-agent?integrations=moltbook)
 
 ---
 
