@@ -572,7 +572,6 @@ Utilities and helpers for working with OpenClaw.
 |------|-------------|
 | [openclaw CLI](https://crewclaw.com/blog/openclaw-cli-commands-reference) | Official CLI - complete command reference |
 | [agents.json](agents.json) | Machine-readable index of all 187 agent templates |
-| [claude-recipes](https://github.com/mergisi/claude-recipes) | 30+ ready-to-use Claude Code workflows for SEO, DevOps, analytics, and more |
 | agent-validator | Validate SOUL.md syntax |
 | mcp-tester | Test MCP server connections |
 
