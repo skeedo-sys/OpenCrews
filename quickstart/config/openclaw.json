@@ -1,1 +1,63 @@
-
+{
+  "env": {
+    "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "provider": "openrouter",
+        "primary": "openrouter/google/gemini-2.0-flash-001",
+        "fallbacks": ["openrouter/meta-llama/llama-3.3-70b-instruct:free"]
+      },
+      "sandbox": { "mode": "non-main", "scope": "agent" }
+    },
+    "list": [
+      {
+        "id": "orchestrator",
+        "default": true,
+        "name": "Orchestrator",
+        "workspace": "/data/workspace/orchestrator",
+        "agentDir": "/data/config/agents/orchestrator",
+        "model": { "primary": "openrouter/google/gemini-2.0-flash-001" }
+      },
+      {
+        "id": "researcher",
+        "name": "Research Agent",
+        "workspace": "/data/workspace/researcher",
+        "agentDir": "/data/config/agents/researcher",
+        "model": { "primary": "openrouter/anthropic/claude-sonnet-4-6:thinking" }
+      },
+      {
+        "id": "writer",
+        "name": "Content Writer",
+        "workspace": "/data/workspace/writer",
+        "agentDir": "/data/config/agents/writer",
+        "model": { "primary": "openrouter/openai/gpt-4o" }
+      },
+      {
+        "id": "analyst",
+        "name": "Data Analyst",
+        "workspace": "/data/workspace/analyst",
+        "agentDir": "/data/config/agents/analyst",
+        "model": { "primary": "openrouter/google/gemini-2.0-pro-exp-02-05" }
+      },
+      {
+        "id": "support",
+        "name": "Support Bot",
+        "workspace": "/data/workspace/support",
+        "agentDir": "/data/config/agents/support",
+        "model": { "primary": "openrouter/mistralai/mistral-small-3.1-24b-instruct:free" }
+      }
+    ]
+  },
+  "bindings": [
+    { "agentId": "orchestrator", "match": { "channel": "telegram" } },
+    { "agentId": "orchestrator", "match": { "channel": "whatsapp" } }
+  ],
+  "tools": {
+    "agentToAgent": {
+      "enabled": true,
+      "allow": ["researcher", "writer", "analyst", "support", "orchestrator"]
+    }
+  }
+}
