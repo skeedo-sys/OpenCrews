@@ -1,9 +1,55 @@
 version: "3.8"
 
 services:
-  agent:
-    build: .
-    env_file: .env
-    volumes:
-      - ./SOUL.md:/app/SOUL.md:ro
+  openclaw-gateway:
+    image: ghcr.io/openclaw/openclaw:latest
+    container_name: openclaw-gateway
     restart: unless-stopped
+    ports:
+      - "127.0.0.1:18789:18789"  # Control UI (loopback only)
+    environment:
+      - OPENCLAW_GATEWAY_BIND=lan
+      - OPENCLAW_GATEWAY_TOKEN=${GATEWAY_TOKEN}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - OPENCLAW_CONFIG_DIR=/data/config
+      - OPENCLAW_WORKSPACE_DIR=/data/workspace
+      - OPENCLAW_PLUGIN_STAGE_DIR=/data/plugins
+      - OPENCLAW_DISABLE_BONJOUR=1
+    volumes:
+      - ./data/config:/data/config
+      - ./data/workspace:/data/workspace
+      - ./data/plugins:/data/plugins
+      - ./agents:/data/agents:ro
+      - ./config/openclaw.json:/data/config/openclaw.json:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"  # For local model fallbacks
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:18789/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - openclaw-net
+
+  openclaw-cli:
+    image: ghcr.io/openclaw/openclaw:latest
+    container_name: openclaw-cli
+    restart: "no"
+    entrypoint: ["node", "dist/index.js"]
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - OPENCLAW_CONFIG_DIR=/data/config
+      - OPENCLAW_WORKSPACE_DIR=/data/workspace
+    volumes:
+      - ./data/config:/data/config
+      - ./data/workspace:/data/workspace
+      - ./data/plugins:/data/plugins
+      - ./agents:/data/agents:ro
+    network_mode: "service:openclaw-gateway"  # Share gateway network
+    depends_on:
+      openclaw-gateway:
+        condition: service_healthy
+
+networks:
+  openclaw-net:
+    driver: bridge
